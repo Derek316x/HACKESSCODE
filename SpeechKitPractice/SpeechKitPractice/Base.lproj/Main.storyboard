@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mu-U1-ir2">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDL-XC-qBX">
+                                        <rect key="frame" x="246" y="275" width="108" height="30"/>
+                                        <state key="normal" title="Start Recording"/>
+                                        <connections>
+                                            <action selector="startRecordingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKg-aN-TxD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bH4-Gi-lpv">
+                                        <rect key="frame" x="247" y="335" width="106" height="30"/>
+                                        <state key="normal" title="Stop Recording"/>
+                                        <connections>
+                                            <action selector="stopRecordingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAu-d5-I2L"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WTN-7U-iPc">
+                                        <rect key="frame" x="180" y="388" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="QhF-93-ob0"/>
+                                            <constraint firstAttribute="height" constant="128" id="z6F-2t-Zey"/>
+                                            <constraint firstAttribute="width" constant="240" id="zn8-xv-ugB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="QhF-93-ob0"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LDL-XC-qBX" firstAttribute="top" secondItem="WTN-7U-iPc" secondAttribute="bottom" constant="40" id="F2s-3G-PLV"/>
+                                    <constraint firstAttribute="trailing" secondItem="WTN-7U-iPc" secondAttribute="trailing" constant="137" id="Hip-6F-Nzu"/>
+                                    <constraint firstItem="bH4-Gi-lpv" firstAttribute="centerX" secondItem="LDL-XC-qBX" secondAttribute="centerX" id="Iob-n1-Yr9"/>
+                                    <constraint firstAttribute="trailing" secondItem="WTN-7U-iPc" secondAttribute="trailing" constant="180" id="RzY-ei-ZqR"/>
+                                    <constraint firstItem="LDL-XC-qBX" firstAttribute="centerY" secondItem="4mu-U1-ir2" secondAttribute="centerY" id="aRL-tH-ZEH"/>
+                                    <constraint firstItem="LDL-XC-qBX" firstAttribute="centerX" secondItem="4mu-U1-ir2" secondAttribute="centerX" id="br5-wY-p0c"/>
+                                    <constraint firstItem="bH4-Gi-lpv" firstAttribute="top" secondItem="LDL-XC-qBX" secondAttribute="bottom" constant="30" id="d8q-hw-KRB"/>
+                                    <constraint firstAttribute="bottom" secondItem="WTN-7U-iPc" secondAttribute="bottom" constant="64" id="em9-JF-fmZ"/>
+                                    <constraint firstItem="WTN-7U-iPc" firstAttribute="centerX" secondItem="4mu-U1-ir2" secondAttribute="centerX" id="l6K-eD-Sdz"/>
+                                    <constraint firstItem="WTN-7U-iPc" firstAttribute="leading" secondItem="4mu-U1-ir2" secondAttribute="leading" constant="180" id="tPO-zB-UOY"/>
+                                    <constraint firstItem="WTN-7U-iPc" firstAttribute="top" secondItem="bH4-Gi-lpv" secondAttribute="bottom" constant="23" id="tY9-dp-T7y"/>
+                                    <constraint firstItem="WTN-7U-iPc" firstAttribute="leading" secondItem="4mu-U1-ir2" secondAttribute="leading" constant="223" id="uzV-1A-fPw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="F2s-3G-PLV"/>
+                                        <exclude reference="Hip-6F-Nzu"/>
+                                        <exclude reference="RzY-ei-ZqR"/>
+                                        <exclude reference="tPO-zB-UOY"/>
+                                        <exclude reference="tY9-dp-T7y"/>
+                                        <exclude reference="uzV-1A-fPw"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4mu-U1-ir2" secondAttribute="bottom" id="0LC-QY-Qsd"/>
+                            <constraint firstAttribute="trailing" secondItem="4mu-U1-ir2" secondAttribute="trailing" id="4BP-5d-oWD"/>
+                            <constraint firstItem="4mu-U1-ir2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F3k-H4-5W2"/>
+                            <constraint firstItem="4mu-U1-ir2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MMt-AB-muo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordedTextView" destination="WTN-7U-iPc" id="4oW-y5-98m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

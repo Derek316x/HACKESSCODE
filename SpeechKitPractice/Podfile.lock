@@ -1,0 +1,10 @@
+PODS:
+  - SpeechKit (1.0.1)
+
+DEPENDENCIES:
+  - SpeechKit (~> 1.0)
+
+SPEC CHECKSUMS:
+  SpeechKit: be896d8ddbdaedfa6fd14f9db2e495139e83cde7
+
+COCOAPODS: 0.39.0
