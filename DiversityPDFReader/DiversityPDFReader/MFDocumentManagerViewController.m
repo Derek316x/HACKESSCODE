@@ -7,6 +7,7 @@
 //
 
 #import "MFDocumentManagerViewController.h"
+#import "C4QReaderViewController.h"
 
 @interface MFDocumentManagerViewController ()
 
@@ -35,7 +36,7 @@
     MFDocumentManager *documentManager = [[MFDocumentManager alloc]initWithFileUrl:documentUrl];
     
     /** Instancing the readerViewController */
-    ReaderViewController *pdfViewController = [[ReaderViewController alloc]initWithDocumentManager:documentManager];
+    C4QReaderViewController *pdfViewController = [[C4QReaderViewController alloc]initWithDocumentManager:documentManager];
     
     /** Set resources folder on the manager */
     documentManager.resourceFolder = thumbnailsPath;
@@ -48,7 +49,5 @@
         //
     }];
 }
-
-
 
 @end
