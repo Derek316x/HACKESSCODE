@@ -1,1 +1,206 @@
-<?xml version='1.0' encoding='UTF-8'?><Workspace version='1.0'><FileRef location='group:FastPdfKit.xcodeproj'/><FileRef location='group:Pods/Pods.xcodeproj'/></Workspace>
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FastPdfKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:FastPdfKit.embeddedframework"
+      name = "FastPdfKit.embeddedframework">
+      <Group
+         location = "group:FastPdfKit.framework"
+         name = "FastPdfKit.framework">
+         <FileRef
+            location = "group:FastPdfKit">
+         </FileRef>
+         <FileRef
+            location = "group:Headers">
+         </FileRef>
+         <FileRef
+            location = "group:Resources">
+         </FileRef>
+         <Group
+            location = "group:Versions"
+            name = "Versions">
+            <Group
+               location = "group:A"
+               name = "A">
+               <FileRef
+                  location = "group:FastPdfKit">
+               </FileRef>
+               <Group
+                  location = "group:Headers"
+                  name = "Headers">
+                  <FileRef
+                     location = "group:AudioViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BookmarkViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BookmarkViewControllerDelegate.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FastPdfKit.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FastPdfKitFramework-Prefix.pch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKAnnotation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKBaseEmbeddedAnnotationURIHandler.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKEmbeddedAnnotationURIHandler.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKGlyphBox.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKOverlayViewDataSource.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKSearchMatchItem.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKSharedSettings.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKThumbnailDataStore.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKURIAnnotation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFAudioPlayerViewImpl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFAudioPlayerViewProtocol.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFAudioProvider.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFDocumentManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFDocumentOverlayDataSource.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFDocumentViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFDocumentViewControllerDelegate.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFOverlayDrawable.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFOverlayTouchable.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFPDFOutlineEntry.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFPDFOutlineRemoteEntry.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mfprofile.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MFTextItem.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MiniSearchView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MiniSearchViewControllerDelegate.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NotificationFactory.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OutlineViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:OutlineViewControllerDelegate.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ReaderViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SearchManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SearchResultCellView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SearchResultDataSource.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SearchResultView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SearchViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SearchViewControllerDelegate.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Stuff.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:TextDisplayViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:TextDisplayViewControllerDelegate.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:TextSearchOperation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:WebBrowser.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Resources"
+                  name = "Resources">
+                  <FileRef
+                     location = "group:FastPdfKitFramework.xcconfig">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FPKReaderBundle.bundle">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Info.plist">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Snippets.txt">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Current">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Resources"
+         name = "Resources">
+         <FileRef
+            location = "group:FastPdfKitFramework.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:FPKReaderBundle.bundle">
+         </FileRef>
+         <FileRef
+            location = "group:Snippets.txt">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
