@@ -18,8 +18,9 @@
 		69ADDADF1BE50F6F00A886F2 /* Snippets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69ADDADB1BE50F6F00A886F2 /* Snippets.txt */; };
 		69ADDAE21BE5109200A886F2 /* MFDocumentManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAE11BE5109200A886F2 /* MFDocumentManagerViewController.m */; };
 		69ADDAE41BE5136500A886F2 /* ObjectiveC.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 69ADDAE31BE5136500A886F2 /* ObjectiveC.pdf */; };
-		69ADDAE71BE518FE00A886F2 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAE61BE518FE00A886F2 /* MyView.m */; };
+		69ADDAE71BE518FE00A886F2 /* SlidingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAE61BE518FE00A886F2 /* SlidingView.m */; };
 		69ADDAED1BE51C5400A886F2 /* C4QReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAEC1BE51C5400A886F2 /* C4QReaderViewController.m */; };
+		69ADDAF11BE5660E00A886F2 /* Swift_Algorithms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 69ADDAF01BE5660E00A886F2 /* Swift_Algorithms.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +39,12 @@
 		69ADDAE01BE5109200A886F2 /* MFDocumentManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFDocumentManagerViewController.h; sourceTree = "<group>"; };
 		69ADDAE11BE5109200A886F2 /* MFDocumentManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFDocumentManagerViewController.m; sourceTree = "<group>"; };
 		69ADDAE31BE5136500A886F2 /* ObjectiveC.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ObjectiveC.pdf; sourceTree = "<group>"; };
-		69ADDAE51BE518FE00A886F2 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
-		69ADDAE61BE518FE00A886F2 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		69ADDAE51BE518FE00A886F2 /* SlidingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingView.h; sourceTree = "<group>"; };
+		69ADDAE61BE518FE00A886F2 /* SlidingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingView.m; sourceTree = "<group>"; };
 		69ADDAEB1BE51C5400A886F2 /* C4QReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QReaderViewController.h; sourceTree = "<group>"; };
 		69ADDAEC1BE51C5400A886F2 /* C4QReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QReaderViewController.m; sourceTree = "<group>"; };
+		69ADDAEF1BE54CE100A886F2 /* SlidingViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingViewDelegate.h; sourceTree = "<group>"; };
+		69ADDAF01BE5660E00A886F2 /* Swift_Algorithms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Swift_Algorithms.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +85,9 @@
 				69ADDAE11BE5109200A886F2 /* MFDocumentManagerViewController.m */,
 				69ADDAEB1BE51C5400A886F2 /* C4QReaderViewController.h */,
 				69ADDAEC1BE51C5400A886F2 /* C4QReaderViewController.m */,
-				69ADDAE51BE518FE00A886F2 /* MyView.h */,
-				69ADDAE61BE518FE00A886F2 /* MyView.m */,
+				69ADDAE51BE518FE00A886F2 /* SlidingView.h */,
+				69ADDAE61BE518FE00A886F2 /* SlidingView.m */,
+				69ADDAEF1BE54CE100A886F2 /* SlidingViewDelegate.h */,
 				69ADDAC81BE50F2000A886F2 /* Main.storyboard */,
 				69ADDACB1BE50F2000A886F2 /* Assets.xcassets */,
 				69ADDACD1BE50F2100A886F2 /* LaunchScreen.storyboard */,
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				69ADDAE31BE5136500A886F2 /* ObjectiveC.pdf */,
+				69ADDAF01BE5660E00A886F2 /* Swift_Algorithms.pdf */,
 				69ADDAC01BE50F2000A886F2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -181,6 +186,7 @@
 			files = (
 				69ADDADF1BE50F6F00A886F2 /* Snippets.txt in Resources */,
 				69ADDACF1BE50F2100A886F2 /* LaunchScreen.storyboard in Resources */,
+				69ADDAF11BE5660E00A886F2 /* Swift_Algorithms.pdf in Resources */,
 				69ADDADD1BE50F6F00A886F2 /* FastPdfKitFramework.xcconfig in Resources */,
 				69ADDACC1BE50F2000A886F2 /* Assets.xcassets in Resources */,
 				69ADDADE1BE50F6F00A886F2 /* FPKReaderBundle.bundle in Resources */,
@@ -196,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69ADDAE71BE518FE00A886F2 /* MyView.m in Sources */,
+				69ADDAE71BE518FE00A886F2 /* SlidingView.m in Sources */,
 				69ADDAE21BE5109200A886F2 /* MFDocumentManagerViewController.m in Sources */,
 				69ADDAED1BE51C5400A886F2 /* C4QReaderViewController.m in Sources */,
 				69ADDAC41BE50F2000A886F2 /* AppDelegate.m in Sources */,

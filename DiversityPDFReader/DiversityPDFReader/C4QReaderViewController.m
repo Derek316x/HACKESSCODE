@@ -7,7 +7,7 @@
 //
 
 #import "C4QReaderViewController.h"
-#import "MyView.h"
+#import "SlidingView.h"
 
 @interface C4QReaderViewController ()
 
@@ -17,33 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
-    CGFloat halfSizeOfView = 25.0f;
-    NSInteger maxViews = 1;
-    CGSize insetSize = CGRectInset(self.view.bounds, 2*halfSizeOfView, 2*halfSizeOfView).size;
+}
+
+-(instancetype)initWithDocumentManager:(MFDocumentManager *)aDocumentManager{
+    self = [super initWithDocumentManager:aDocumentManager];
     
-    //add Views
-    for (int i = 0; i < maxViews; i++) {
-        CGFloat pointX = random () % ((int)insetSize.width) + halfSizeOfView;
-        CGFloat pointY = random () % ((int)insetSize.height) + halfSizeOfView;
-        MyView *newView = [[MyView alloc]initWithFrame:CGRectMake(pointX, pointY, 3000, 1000)];
-        [self.view addSubview:newView];
-    }
+    CGFloat height = self.view.bounds.size.height * 0.8;
+    self.divView = [[SlidingView alloc]initWithFrame:CGRectMake(-1500, height, 3000, 1000)];
+    
+    [self.view addSubview:self.divView];
+    
+    return self;
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

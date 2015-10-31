@@ -7,8 +7,11 @@
 //
 
 #import <FastPdfKit/FastPdfKit.h>
+#import "SlidingViewDelegate.h"
 
 @interface MFDocumentManagerViewController : UIViewController
+
+@property (nonatomic) MFDocumentManager *documentManager;
 
 -(IBAction)actionOpenPlainDocument:(id)sender;
 

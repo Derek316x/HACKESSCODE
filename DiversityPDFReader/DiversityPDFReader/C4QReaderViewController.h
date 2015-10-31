@@ -7,7 +7,10 @@
 //
 
 #import <FastPdfKit/FastPdfKit.h>
+#import "SlidingView.h"
 
 @interface C4QReaderViewController : ReaderViewController
+
+@property (nonatomic) SlidingView *divView;
 
 @end

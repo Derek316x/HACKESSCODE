@@ -9,7 +9,7 @@
 #import "MFDocumentManagerViewController.h"
 #import "C4QReaderViewController.h"
 
-@interface MFDocumentManagerViewController ()
+@interface MFDocumentManagerViewController () <SlidingViewDelegate>
 
 @end
 
@@ -33,13 +33,16 @@
     NSURL *documentUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:documentName ofType:@"pdf"]];
     
     /** Instancing the documentManager */
-    MFDocumentManager *documentManager = [[MFDocumentManager alloc]initWithFileUrl:documentUrl];
+    self.documentManager = [[MFDocumentManager alloc]initWithFileUrl:documentUrl];
     
     /** Instancing the readerViewController */
-    C4QReaderViewController *pdfViewController = [[C4QReaderViewController alloc]initWithDocumentManager:documentManager];
+    C4QReaderViewController *pdfViewController = [[C4QReaderViewController alloc]initWithDocumentManager:self.documentManager];
+    
+    //set pdfViewController's divView delegate
+    pdfViewController.divView.delegate = self;
     
     /** Set resources folder on the manager */
-    documentManager.resourceFolder = thumbnailsPath;
+    self.documentManager.resourceFolder = thumbnailsPath;
     
     /** Set document id for thumbnail generation */
     pdfViewController.documentId = documentName;
@@ -49,5 +52,16 @@
         //
     }];
 }
+
+-(void)buttonPressed{
+    NSLog(@"it works!");
+    NSString *text = [self.documentManager wholeTextForPage:381];
+    
+    
+    NSString *correctText = @"A dictionary is a collection of data consisting of key-object pairs. Just as you would look up the definition of a word in a dictionary, you obtain the value (object) from an Objective-C dictionary by its key. The keys in a dictionary must be unique, and they can be of any object type, although they are typically strings. The value associated with the key can also be of any object type, but it cannot be nil.";
+    
+}
+
+
 
 @end
