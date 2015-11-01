@@ -18,27 +18,34 @@
         self.gestureRecognizers = @[panRecognizer];
         
         UIColor *redColor = [UIColor colorWithRed:206/255.0 green:17/255.0 blue:38/255.0 alpha:1.0];
-        UIColor *orangeColor = [UIColor colorWithRed:255/255.0 green:123/255.0 blue:0/255.0 alpha:1.0];
-        
-        //add orange underline
-        UIView *orangeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 3000, 15)];
-        orangeView.backgroundColor = orangeColor;
-        [self addSubview:orangeView];
+        UIColor *orangeColor = [UIColor colorWithRed:255/255.0 green:123/255.0 blue:0/255.0 alpha:0.3];
         
         //add button
         UIButton *speechTestButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-        speechTestButton.frame = orangeView.frame;
+        speechTestButton.frame = self.frame;
         [speechTestButton setTitle:@"" forState:UIControlStateNormal];
         [speechTestButton addTarget:self action:@selector(speechTestButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [orangeView addSubview:speechTestButton];
+        [self addSubview:speechTestButton];
         
-        self.backgroundColor = redColor;
+        self.backgroundColor = orangeColor;
+        
+        //add orange underline
+        //UIView *orangeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 3000, 15)];
+        //orangeView.backgroundColor = orangeColor;
+        //[self addSubview:orangeView];
+        
+        //add red box on top of orange transparent box
+        UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(0, 30, self.bounds.size.width, self.bounds.size.height)];
+        redView.backgroundColor = redColor;
+        [self addSubview:redView];
+        
     }
     return self;
 }
 
 -(void)speechTestButtonPressed{
     [self.delegate buttonPressed];
+    NSLog(@"BUTTON PRESSED");
 }
 
 -(void) detectPan: (UIPanGestureRecognizer *) uiPanGestureRecognizer{
