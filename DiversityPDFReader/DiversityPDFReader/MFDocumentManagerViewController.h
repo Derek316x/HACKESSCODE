@@ -8,10 +8,13 @@
 
 #import <FastPdfKit/FastPdfKit.h>
 #import "SlidingViewDelegate.h"
+#import <SpeechKit/SpeechKit.h>
 
-@interface MFDocumentManagerViewController : UIViewController
+@interface MFDocumentManagerViewController : UIViewController  <SKRecognizerDelegate>
 
 @property (nonatomic) MFDocumentManager *documentManager;
+@property (nonatomic, retain) SKRecognizer* recognizer;
+@property NSString* recordedString;
 
 -(IBAction)actionOpenPlainDocument:(id)sender;
 

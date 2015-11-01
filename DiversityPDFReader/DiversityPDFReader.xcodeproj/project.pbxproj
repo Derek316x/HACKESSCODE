@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698B043D1BE6657400FA6B4D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698B043C1BE6657400FA6B4D /* AudioToolbox.framework */; };
+		698B043F1BE6658600FA6B4D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698B043E1BE6658600FA6B4D /* SystemConfiguration.framework */; };
+		698B04411BE6691700FA6B4D /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698B04401BE6691700FA6B4D /* SpeechKit.framework */; };
 		69ADDAC11BE50F2000A886F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAC01BE50F2000A886F2 /* main.m */; };
 		69ADDAC41BE50F2000A886F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAC31BE50F2000A886F2 /* AppDelegate.m */; };
 		69ADDACA1BE50F2000A886F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ADDAC81BE50F2000A886F2 /* Main.storyboard */; };
@@ -21,9 +24,14 @@
 		69ADDAE71BE518FE00A886F2 /* SlidingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAE61BE518FE00A886F2 /* SlidingView.m */; };
 		69ADDAED1BE51C5400A886F2 /* C4QReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ADDAEC1BE51C5400A886F2 /* C4QReaderViewController.m */; };
 		69ADDAF11BE5660E00A886F2 /* Swift_Algorithms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 69ADDAF01BE5660E00A886F2 /* Swift_Algorithms.pdf */; };
+		BC66175FAE58C7D6EEA10D00 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D1C05EA04C8F6EEF55BAF7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33D1C05EA04C8F6EEF55BAF7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		698B043C1BE6657400FA6B4D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		698B043E1BE6658600FA6B4D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		698B04401BE6691700FA6B4D /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
 		69ADDABC1BE50F2000A886F2 /* DiversityPDFReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiversityPDFReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69ADDAC01BE50F2000A886F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69ADDAC21BE50F2000A886F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,19 +60,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698B043F1BE6658600FA6B4D /* SystemConfiguration.framework in Frameworks */,
+				698B04411BE6691700FA6B4D /* SpeechKit.framework in Frameworks */,
+				698B043D1BE6657400FA6B4D /* AudioToolbox.framework in Frameworks */,
 				69ADDADC1BE50F6F00A886F2 /* FastPdfKit.framework in Frameworks */,
+				BC66175FAE58C7D6EEA10D00 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BD53C461D52D5D5AB51790B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		69ADDAB31BE50F2000A886F2 = {
 			isa = PBXGroup;
 			children = (
+				698B043E1BE6658600FA6B4D /* SystemConfiguration.framework */,
+				698B04401BE6691700FA6B4D /* SpeechKit.framework */,
+				698B043C1BE6657400FA6B4D /* AudioToolbox.framework */,
 				69ADDABE1BE50F2000A886F2 /* DiversityPDFReader */,
 				69ADDABD1BE50F2000A886F2 /* Products */,
 				69ADDAD61BE50F6F00A886F2 /* FastPdfKit.embeddedframework */,
+				2BD53C461D52D5D5AB51790B /* Pods */,
+				E6505E07DF48CB55AABB4153 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +150,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E6505E07DF48CB55AABB4153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33D1C05EA04C8F6EEF55BAF7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69ADDAD31BE50F2100A886F2 /* Build configuration list for PBXNativeTarget "DiversityPDFReader" */;
 			buildPhases = (
+				21918FFC296D9F715B7E82B4 /* Check Pods Manifest.lock */,
 				69ADDAB81BE50F2000A886F2 /* Sources */,
 				69ADDAB91BE50F2000A886F2 /* Frameworks */,
 				69ADDABA1BE50F2000A886F2 /* Resources */,
+				499E556139909DFD5651A8AD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +230,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21918FFC296D9F715B7E82B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		499E556139909DFD5651A8AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69ADDAB81BE50F2000A886F2 /* Sources */ = {
@@ -322,6 +389,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FastPdfKit.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DiversityPDFReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -338,6 +406,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FastPdfKit.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DiversityPDFReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -365,6 +434,7 @@
 				69ADDAD51BE50F2100A886F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
