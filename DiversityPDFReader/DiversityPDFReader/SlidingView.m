@@ -22,7 +22,7 @@
         
         //add button
         UIButton *speechTestButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-        speechTestButton.frame = self.frame;
+        speechTestButton.frame = CGRectMake(0, 0, self.bounds.size.width, 30);
         [speechTestButton setTitle:@"" forState:UIControlStateNormal];
         [speechTestButton addTarget:self action:@selector(speechTestButtonPressed) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:speechTestButton];
